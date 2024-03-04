@@ -46,7 +46,7 @@ const conversiones = {
 
 
 const TransformToMorseCode = (text) => {
-    for (let letter of text) {
+    for (let letter of text.toLowerCase()) {
         for (let i = 1; i < 38; i++) {
             if (letter == conversiones[i][0]) {
                 result.push(conversiones[i][1]);
@@ -60,7 +60,7 @@ const transformToNorm = (text) => {
     let morseCode = [];
     let intanceLetter = ``;
     text += ` `;
-    for (let letter of text) {
+    for (let letter of text.toLowerCase()) {
         if (letter == ` `) {
             morseCode.push(intanceLetter)
             intanceLetter = ``;
