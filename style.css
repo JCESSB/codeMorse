@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    gap: 60px;
+    margin: 30px;
+}
+
+.checkbox{
+    appearance: none;
+    cursor: pointer;
+    background: linear-gradient(90deg,#ff000033, #0000ff33);
+    box-shadow: -5px 5px 7px #555; 
+    width: 40px;
+    height: 20px; 
+    border: 1px solid #999;
+}
+
+.checkbox:checked{
+    background: linear-gradient(270deg,#ff000077, #0000ff77);
+}
+
+
+.textarea{
+    background: linear-gradient(30deg, #ff000055, #0000ff55);
+    box-shadow: -10px 10px 20px #555 ;
+    filter: blur(100%);
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.buttom{
+    width: 60px;
+    height: 30px;
+    font-size: 1.1rem;
+    text-align: center;
+    background: linear-gradient(90deg, #ff000033, #0000ff33);
+    border: 1px solid;
+    cursor: pointer;
+    box-shadow: -5px 5px 10px #444;
+}
+
+.buttom:active{
+    box-shadow: -2px 2px 5px;
+    transform: scale(.8);
+    transition: .8;
+}
+
+.title{
+    text-align: center;
+    margin: 15px;
+    font-family: sans-serif;
+    filter: drop-shadow(-5px 5px 4px #444);
+    background: linear-gradient(30deg, #ff000055, #0000ff55);
+    background-clip: text;
+    color: transparent;
+}
+
+.respuesta{
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background: linear-gradient(30deg, #ff000055, #0000ff55);
+    box-shadow: -10px 10px 20px #555 ;
+    filter: blur(100%);
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.borrar{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
